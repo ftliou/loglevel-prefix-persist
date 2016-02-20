@@ -21,7 +21,7 @@
     },
     "license": "MIT",
     "version": "1.0.0",
-    "main": "./main",
+    "main": "./lib",
     "scripts": {
     },
     "dependencies": {
