@@ -1,6 +1,6 @@
 var _ = require('lodash');
 var moment = require('moment');
-var utils = require('./utils');
+var utils = require('./lib/utils');
 
 module.exports = function(env, logger, config) {
 

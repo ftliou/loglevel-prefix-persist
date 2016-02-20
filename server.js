@@ -7,7 +7,7 @@ var scheduler = require('node-schedule');
 var fileRotator = require('file-stream-rotator');
 var _ = require('lodash');
 var moment = require('moment');
-var utils = require('./utils');
+var utils = require('./lib/utils');
 
 
 function formatter (methodName, loggerName, args) {

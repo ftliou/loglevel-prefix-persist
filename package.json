@@ -21,7 +21,7 @@
     },
     "license": "MIT",
     "version": "1.0.0",
-    "main": "./lib",
+    "main": "index.js",
     "scripts": {
     },
     "dependencies": {
