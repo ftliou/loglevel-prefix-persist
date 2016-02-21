@@ -61,8 +61,11 @@ module.exports = function(env, logger, config) {
         logger.writer = function(req, res, next) {
             if (req.method === 'POST' && req.url === '/log') {
                 logger.writeToStream(req.body.type, req.body.module, JSON.parse(req.body.args));
+                res.status(200).end();
             }
-            next();
+            else {
+                next();
+            }
         };
 
         logger.endCritical = function(err, callback) {
@@ -88,7 +91,7 @@ module.exports = function(env, logger, config) {
 
         return function () {
             var res = formatter(methodName, loggerName, arguments);
-            if (persist) {
+            if (persist && logger.levels[methodName.toUpperCase()] >= logger.levels[persist.toUpperCase()]) {
                 logger.writeToStream(methodName, loggerName, arguments);
             }
             rawMethod.apply(null, [(ck[methodName])(res.prefix)].concat(_.map(res.messages, function(msg) {
