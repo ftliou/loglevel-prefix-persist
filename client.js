@@ -36,4 +36,7 @@ module.exports = function(env, logger, config) {
         }
     };
     logger.setLevel(level);
+    
+    module.exports = logger;
+    return logger;
 };
