@@ -1,5 +1,6 @@
 var _ = require('lodash');
 var moment = require('moment');
+var fetch = require('whatwg-fetch');
 var utils = require('./lib/utils');
 
 module.exports = function(env, logger, config) {
@@ -21,13 +22,15 @@ module.exports = function(env, logger, config) {
         
         if (persist && logger.levels[methodName.toUpperCase()] >= logger.levels[persist.toUpperCase()]) {
             return function () {
-                $.post('/log', {type:methodName, module:loggerName+"::client", args:JSON.stringify(_.values(arguments))})
-                    .done(function() {
-
+                fetch('/log', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        type:methodName, module:loggerName+"::client", args:_.values(arguments)
                     })
-                    .fail(function(xhr) {
-                        
-                    });
+                })
                 rawMethod.apply(null, ["["+loggerName + "]"].concat(_.values(arguments)));
             };
         }

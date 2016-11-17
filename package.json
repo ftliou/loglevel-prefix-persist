@@ -1,38 +1,37 @@
 {
-    "name": "loglevel-prefix-persist",
-    "description": "Plugin for loglevel with message prefix and persistence",
-    "author": {
-	"name": "ftliou"
-    },
-    "keywords": [
-	"log",
-	"logger",
-	"logging",
-	"browser",
-	"loglevel-plugin"
-    ],
-    "homepage": "https://github.com/ftliou/loglevel-prefix-persist",
-    "bugs": {
-	"url": "https://github.com/ftliou/loglevel-prefix-persist/issues"
-    },
-    "repository": {
-	"type": "git",
-	"url": "https://github.com/ftliou/loglevel-prefix-persist.git"
-    },
-    "license": "MIT",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-    },
-    "dependencies": {
-		"loglevel": "^1.4.0",
-	    "chalk": "^1.1.1",
-	    "async": "^1.5.2",
-	    "file-stream-rotator": "git+https://github.com/ftliou/file-stream-rotator.git",
-	    "lodash": "^4.0.0",
-	    "moment": "^2.11.2",
-	    "node-schedule": "^1.0.0"
-    },
-    "devDependencies": {
-    }
+  "name": "loglevel-prefix-persist",
+  "description": "Plugin for loglevel with message prefix and persistence",
+  "author": {
+    "name": "ftliou"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "logging",
+    "browser",
+    "loglevel-plugin"
+  ],
+  "homepage": "https://github.com/ftliou/loglevel-prefix-persist",
+  "bugs": {
+    "url": "https://github.com/ftliou/loglevel-prefix-persist/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ftliou/loglevel-prefix-persist.git"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "async": "^1.5.2",
+    "chalk": "^1.1.1",
+    "file-stream-rotator": "git+https://github.com/ftliou/file-stream-rotator.git",
+    "lodash": "^4.0.0",
+    "loglevel": "^1.4.0",
+    "moment": "^2.11.2",
+    "node-schedule": "^1.0.0",
+    "whatwg-fetch": "^2.0.0"
+  },
+  "devDependencies": {}
 }
