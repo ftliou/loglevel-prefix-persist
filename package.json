@@ -20,18 +20,18 @@
     "url": "https://github.com/ftliou/loglevel-prefix-persist.git"
   },
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
     "async": "^1.5.2",
     "chalk": "^1.1.1",
     "file-stream-rotator": "git+https://github.com/ftliou/file-stream-rotator.git",
+    "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.0.0",
     "loglevel": "^1.4.0",
     "moment": "^2.11.2",
-    "node-schedule": "^1.0.0",
-    "whatwg-fetch": "^2.0.0"
+    "node-schedule": "^1.0.0"
   },
   "devDependencies": {}
 }
