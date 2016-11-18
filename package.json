@@ -20,7 +20,7 @@
     "url": "https://github.com/ftliou/loglevel-prefix-persist.git"
   },
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
