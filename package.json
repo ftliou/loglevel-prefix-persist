@@ -26,7 +26,7 @@
   "dependencies": {
     "async": "^1.5.2",
     "chalk": "^1.1.1",
-    "file-stream-rotator": "git+https://github.com/ftliou/file-stream-rotator.git",
+    "file-stream-rotator": "git+ssh://git@github.com/ftliou/file-stream-rotator.git",
     "jquery": "^3.1.1",
     "lodash": "^4.0.0",
     "loglevel": "^1.4.0",
